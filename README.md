@@ -95,19 +95,13 @@ sudo systemctl status nginx
 
 Once installed, visiting your server's IP address in a browser should display the Nginx welcome page, confirming the web server is live.
 
-#### 📸 Screenshot 1 – Terminal: Running `sudo apt update`
-> _Should show the package list being fetched and updated successfully in the terminal. Look for "Hit", "Get", and "Fetched X MB" lines confirming the update ran without errors._
-
+#### 📸 Screenshot 1 – Terminal: Running `sudo apt update
 ![apt update output](screenshots/apt-update.jpg)
 
 #### 📸 Screenshot 2 – Terminal: Nginx Status Active & Running
-> _Should show the output of `sudo systemctl status nginx` with a green **"active (running)"** status, the process ID, and memory usage. This confirms Nginx started successfully._
-
 ![Nginx Status Terminal](screenshots/nginx-status-running.jpg)
 
 #### 📸 Screenshot 3 – Browser: Nginx Default Welcome Page
-> _Should show the **"Welcome to nginx!"** page in your browser when you visit `http://your-server-ip`. This confirms Nginx is serving web traffic correctly on port 80._
-
 ![Nginx Default Page](screenshots/nginx-default-browser.jpg)
 
 ---
@@ -245,18 +239,12 @@ sudo rm /var/www/html/info.php
 **Security note:** The `phpinfo()` page reveals detailed information about the server environment. It should always be removed after testing and never left on a production server.
 
 #### 📸 Screenshot 5 – Terminal: Creating the `info.php` File
-> _Should show the terminal after running `sudo nano /var/www/html/info.php` with the `<?php phpinfo(); ?>` content visible inside the nano editor, before saving._
-
 ![Creating info.php](screenshots/create-info-php.jpg)
 
 #### 📸 Screenshot 6 – Browser: PHP Info Page (Full Stack Confirmed)
-> _Should show the full **PHP Info** page rendered in the browser at `http://your-server-ip/info.php`. Key things visible should include the PHP version at the top, the **Server API** field showing **"FPM/FastCGI"** (confirming PHP-FPM is handling requests), and the Nginx server software listed. This is the most important screenshot — it proves the entire LEMP stack is working end-to-end._
-
 ![PHP Info Page](screenshots/php-info-page-browser.jpg)
 
 #### 📸 Screenshot 7 – Browser: Final Working Web Page
-> _Should show your final custom web page (not the phpinfo page) served by the LEMP stack in the browser — confirming the stack is ready to serve real content. This could be a custom `index.php` or `index.html` you created as the final deliverable._
-
 ![Final Working Web Page](screenshots/final-working-webpage.jpg)
 
 
